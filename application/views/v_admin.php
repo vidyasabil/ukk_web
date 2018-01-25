@@ -359,7 +359,13 @@
             <li><a href="pages/layout/fixed.html"><i class="fa fa-circle-o"></i> Fixed</a></li>
             <li><a href="pages/layout/collapsed-sidebar.html"><i class="fa fa-circle-o"></i> Collapsed Sidebar</a></li>
           </ul>
+
         </li>
+        <li>
+        <a href="<?php echo base_url('admin/rute'); ?>">
+        		<i class="fa fa-map"></i>.<span>Rutes</span>
+        		</a>
+        		</li>
         <li>
           <a href="pages/widgets.html">
             <i class="fa fa-th"></i> <span>Widgets</span>
