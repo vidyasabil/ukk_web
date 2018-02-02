@@ -1,497 +1,316 @@
 <!--
-Author: W3layouts
-Author URL: http://w3layouts.com
-License: Creative Commons Attribution 3.0 Unported
-License URL: http://creativecommons.org/licenses/by/3.0/
+	Author: W3layouts
+	Author URL: http://w3layouts.com
+	License: Creative Commons Attribution 3.0 Unported
+	License URL: http://creativecommons.org/licenses/by/3.0/
 -->
+
 <!DOCTYPE html>
 <html>
 <head>
-<title>Travelo a Travel Category Flat Bootstarp Responsive Web Template| Home :: w3layouts</title>
-<link href="http://localhost/ukk_web/gudang/css/style.css" rel='stylesheet' type='text/css' />
-<!-- jQuery (Bootstrap's JavaScript plugins) -->
-<script src="http://localhost/ukk_web/gudang/js/jquery.min.js"></script>
-<!-- Custom Theme files -->
-<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
-<!-- Custom Theme files -->
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="keywords" content="Travelo  Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, 
-Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
-<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
-<!--webfont-->
-<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900' rel='stylesheet' type='text/css'>
-<link href='http://fonts.googleapis.com/css?family=Raleway:400,800,300,100,500,700,600,900' rel='stylesheet' type='text/css'>
-<!--animated-css-->
-<link href="http://localhost/ukk_web/gudang/css/animate.css" rel="stylesheet" type="text/css" media="all">
-<script src="http://localhost/ukk_web/gudang/js/wow.min.js"></script>
-<script>
- new WOW().init();
-</script>
-<!--/animated-css-->
-<!--script-->
-<script type="text/javascript" src="http://localhost/ukk_web/gudang/js/move-top.js"></script>
-<script type="text/javascript" src="http://localhost/ukk_web/gudang/js/easing.js"></script>
-<!--/script-->
-<script type="text/javascript">
-			jQuery(document).ready(function($) {
-				$(".scroll").click(function(event){		
-					event.preventDefault();
-					$('html,body').animate({scrollTop:$(this.hash).offset().top},900);
-				});
-			});
-</script>
+	<title>Flight Ticket Booking a Flat Responsive Widget Template :: w3layouts</title>
+	<link rel="stylesheet" href="<?php echo base_url();?>/web/css/style.css">
+	<link href='//fonts.googleapis.com/css?family=Open+Sans:400,300italic,300,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+	<link href='//fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="keywords" content="Flight Ticket Booking  Widget Responsive, Login Form Web Template, Flat Pricing Tables, Flat Drop-Downs, Sign-Up Web Templates, Flat Web Templates, Login Sign-up Responsive Web Template, Smartphone Compatible Web Template, Free Web Designs for Nokia, Samsung, LG, Sony Ericsson, Motorola Web Design" />
+	<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+		
 </head>
 <body>
-<!---->
-	<div class="banner-bg">
-		<video autoplay="autoplay" muted="muted" poster="wall_icons/my.jpg" width="100%"  loop>
-			<source src="http://localhost/ukk_web/gudang/srix.mp4" type="video/mp4" type="video/mp4">
-		</video>
-		<div class="banner">
-		 <div class="header">	 
-			 <div class="logo wow fadeInLeft" data-wow-delay="0.5s">
-			 <a href="http://localhost/ukk_web"><img src="http://localhost/ukk_web/gudang/images/logo2.png" alt=""/></a>
-			 </div>	
-			 <div class="top-menu">
-				<span class="menu"></span> 
-				<ul class="cl-effect-1">
-					 <li><a class="scroll" href="#">HOME</a></li>
-					 <li><a class="scroll" href="#brief">BRIEF</a></li>
-					 <li><a class="scroll" href="#features">FEATURES</a></li>
-					 <li><a class="scroll" href="#screenshots">TOURS</a></li>
-					 <li><a class="scroll" href="#testimonial">TESTIMONIAL</a></li>
-					 <li><a class="scroll" href="#contact">CONTACT</a></li>
-				 </ul>
-			 </div>
-			 <div class="clearfix"></div>
-			 <!-- script-for-menu -->
-		 <script>
-			$( "span.menu" ).click(function() {
-			$( "ul.cl-effect-1" ).slideToggle( 300, function() {
-			// Animation complete.
-			});
-			});
-		</script>
-		 <!-- script-for-menu -->			 
-		 </div>
-		 <div class="banner-text wow fadeInUp" data-wow-delay="0.5s">
-			 <h1>Plan and <span>Book</span> Your Perfect Trip</h1>
-		 </div>
-		 <div class="booking-form">
-					<!---strat-date-piker---->
-					<link rel="stylesheet" href="css/jquery-ui.css" />
-					<script src="js/jquery-ui.js"></script>
-							  <script>
-									  $(function() {
-										$( "#datepicker,#datepicker1" ).datepicker();
-									  });
-							  </script>
-					<!---/End-date-piker---->
-					<link type="text/css" rel="stylesheet" href="css/JFGrid.css" />
-					<link type="text/css" rel="stylesheet" href="css/JFFormStyle-1.css" />
-					<script type="text/javascript" src="js/JFCore.js"></script>
-					<script type="text/javascript" src="js/JFForms.js"></script>
-					<!-- Set here the key for your domain in order to hide the watermark on the web server -->
-					<script type="text/javascript">
-						(function() {
-							JC.init({
-								domainKey: ''
-							});
-						})();
-					</script>
-					<div class="online_reservation">
-							<div class="b_room">
-								<div class="booking_room">
-									<div class="reservation">
-										<ul>		
-											<li  class="span1_of_1 left">
-												 <h5>From</h5>
-												 <div class="book_date">
-													 <form>
-														<input type="text" placeholder="Type Depature City" required="">
-													 </form>
-												 </div>					
-											 </li>
-											 <li  class="span1_of_1 left">
-												 <h5>To</h5>
-												 <div class="book_date">
-												 <form>
-													<input type="text" placeholder="Type Destination City" required="">
-												 </form>
-												 </div>		
-											 </li>
-											 <li  class="span1_of_1 left">
-												 <h5>Arrival</h5>
-												 <div class="book_date">
-													 <form>
-													 <input class="date" id="datepicker" type="text" value="2/04/2015" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '2/04/2015';}" required=>
-													 </form>
-												 </div>					
-											 </li>
-											 <li  class="span1_of_1 left">
-												 <h5>Depature</h5>
-												 <div class="book_date">
-												 <form>
-													<input class="date" id="datepicker1" type="text" value="22/08/2015" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '22/08/2015';}" required=>
-												 </form>
-												 </div>		
-											 </li>
-											 <li class="span1_of_1">
-												 <h5>Class</h5>
-												 <!----------start section_room----------->
-												 <div class="section_room">
-													  <select id="country" onchange="change_country(this.value)" class="frm-field required">
-															<option value="null">Economy</option>
-															<option value="null">Business</option>         
-															<option value="AX">First Class</option>
-															<option value="AX">Premium Economy</option>
-													  </select>
-												 </div>	
-											 </li>
-											 <li class="span1_of_3">
-													<div class="date_btn">
-														<form>
-															<input type="submit" value="Book Now" />
-														</form>
-													</div>
-											 </li>
-											 <div class="clearfix"></div>
-										</ul>
-									 </div>
-								</div>
-								<div class="clearfix"></div>
+	<h1>Flight Ticket Booking</h1>
+	<div class="main-agileinfo">
+		<div class="sap_tabs">			
+			<div id="horizontalTab">
+				<ul class="resp-tabs-list">
+					<li class="resp-tab-item"><span>Round Trip</span></li>
+					<li class="resp-tab-item"><span>One way</span></li>
+					<li class="resp-tab-item"><span>Multi city</span></li>				
+				</ul>	
+				<div class="clearfix"> </div>	
+				<div class="resp-tabs-container">
+					<div class="tab-1 resp-tab-content roundtrip">
+						<form action="#" method="post">
+							<div class="from">
+								<h3>From</h3>
+								<input type="text" name="city" class="city1" placeholder="Type Departure City" required="">
 							</div>
-					</div>
-					<!---->	
-			</div>
-			 <div class="clearfix"></div> 
-			 <div class="online-form">
-				<a class="play-icon popup-with-zoom-anim" href="#small-dialog2">Booking Here</a>
-			</div>
-			<div id="small-dialog2" class="mfp-hide">
-									<div class="signup">
-										<form>
-											<input type="text" class="email" placeholder="Type Depature City" required="required" pattern="([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?" />
-											<input type="text" class="email" placeholder="Type Destination City" required="required" pattern="([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?" />
-											<input type="text" class="email" placeholder="2/04/2015" required="required" pattern="([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?" />
-											<input type="text" class="email" placeholder="22/08/2015" required="required" pattern="([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?" />
-											<input type="submit"  value="Book Now"/>
-										</form>
-									</div>
-									<div class="clearfix"> </div>
-								</div>	
-								<script>
-										$(document).ready(function() {
-										$('.popup-with-zoom-anim').magnificPopup({
-											type: 'inline',
-											fixedContentPos: false,
-											fixedBgPos: true,
-											overflowY: 'auto',
-											closeBtnInside: true,
-											preloader: false,
-											midClick: true,
-											removalDelay: 300,
-											mainClass: 'my-mfp-zoom-in'
-										});
-																										
-										});
-								</script>	
-		</div>
-	</div>
-<!---->
-<div id="brief" class="brief">
-	 <div class="container">
-		 <div class="col-md-6 brief-grids wow fadeInLeft" data-wow-delay="0.5s">
-			 <img src="http://localhost/ukk_web/gudang/images/browse.jpg" alt=""/>
-			 <div class="brief-grid">
-				 <div class="brief-grid-text">
-					 <h3>TRAVEL DOCUMENTS</h3>
-					 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt 
-						ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco 
-						laboris nisi ut.Interdum et malesuada fames ac ante ipsum primis in faucibus. Suspendisse 
-						potenti. Quisque vel mauris euismod, imperdiet lectus fringilla, posuere quam. Suspendisse 
-						vel enim ut odio dapibus tempor.
-					 </p>
-				 </div>
-			 </div>
-		 </div>
-		 <div class="col-md-6 brief-grids wow fadeInRight" data-wow-delay="0.5s">
-			 <img src="http://localhost/ukk_web/gudang/images/browse2.jpg" alt=""/>
-			 <div class="brief-grid">
-				 <div class="brief-grid-text">
-					 <h3>Describe what we are Provide</h3>
-					 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 		incididunt 
-						ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco 
-						laboris nisi ut.Interdum et malesuada fames ac ante ipsum primis in faucibus. Suspendisse 
-						potenti. Quisque vel mauris euismod, imperdiet lectus fringilla, posuere quam. Suspendisse 
-						vel enim ut odio dapibus tempor.
-					 </p>
-				 </div>
-			 </div>
-		 </div>
-		 <div class="clearfix"></div>		 
-	 </div>
-</div>
-<!---->
-<div id="features" class="features">
-	 <div class="container">
-		 <div class="feature-text text-center">
-			 <h3>Features</h3>
-			 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-		 </div>
-		 <div class="features-section">
-			 <div class="col-md-6 feature-grid text-center">
-			 <i class="f1 wow bounceIn" data-wow-delay="0.5s"></i>
-			 <h3>Easy to Customize</h3>
-			 <p>Lorem lean startup ipsum product market fit customer development acquihire technical cofounder. User engagement.
-			 sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-			 </div>
-			 <div class="col-md-6 feature-grid text-center">
-			 <i class="f2 wow bounceIn" data-wow-delay="0.5s"></i>
-			 <h3>Travel Documents</h3>
-			 <p>Lorem lean startup ipsum product market fit customer development acquihire technical cofounder. User engagement.
-			 sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-			 </div>
-			 <div class="clearfix"></div>
-			 <div class="col-md-6 feature-grid text-center">
-			 <i class="f3 wow bounceIn" data-wow-delay="0.5s"></i>
-			 <h3>Visa Support</h3>
-			 <p>Lorem lean startup ipsum product market fit customer development acquihire technical cofounder. User engagement.
-			 sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-			 </div>
-			 <div class="col-md-6 feature-grid text-center">
-			 <i class="f4 wow bounceIn" data-wow-delay="0.5s"></i>
-			 <h3>Consultation</h3>
-			 <p>Lorem lean startup ipsum product market fit customer development acquihire technical cofounder. User engagement.
-			 sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-			 </div>
-		 </div>
-	 </div>
-</div>
-<!---->
-<!---->
-<div class="video">
-	 <div class="container">
-		<div class="video-text text-center">
-			<h3>Watch Video</h3>
-			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-		</div>
-		<div class="video-grids">
-			<div class="col-md-8 video-left">
-				<h4>Lorem ipsum dolor sit amet, consectetur 
-					a maximus metus semper et. 
-				</h4>
-				<h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas congue gravida ex,
-					a maximus metus semper et. Curabitur non enim pharetra, dictum tortor quis, hendr
-					erit tortor.
-				</h5>
-				<p>Maecenas finibus quis nulla id facilisis. Aenean dignissim magna et est elit porttitor 
-					gravida lacinia. Fusce elementum massa at eros lacinia imperdiet. Aenean mollis ultricies 
-					dictum.Praesent suscipit urna eget elit porttitor mollis. Quisque mollis rhoncus ante, eu 
-					interdum quam vehicula cursus. Nam bibendum odio eu sem semper posuere. Fusce elementum massa at eros lacinia imperdiet. Aenean mollis ultricies 
-					dictum.Fusce elementum massa at eros lacinia imperdiet. Aenean mollis ultricies 
-					dictum.Fusce elementum massa at eros lacinia imperdiet. Aenean mollis ultricies 
-					dictum. 
-				</p>
-			</div>
-			<div class="col-md-4 video-right">
-				<img src="http://localhost/ukk_web/gudang/images/1.jpg" alt="" />
-				<a class="play-icon popup-with-zoom-anim" href="#small-dialog"><span> </span></a>
-				<div id="small-dialog" class="mfp-hide">
-					<iframe src="https://player.vimeo.com/video/40301191" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-				</div>
-				<link href="css/popuo-box.css" rel="stylesheet" type="text/css" media="all"/>
-				<script src="js/jquery.magnific-popup.js" type="text/javascript"></script>
-				<script>
-						$(document).ready(function() {
-						$('.popup-with-zoom-anim').magnificPopup({
-						type: 'inline',
-						fixedContentPos: false,
-						fixedBgPos: true,
-						overflowY: 'auto',
-						closeBtnInside: true,
-						preloader: false,
-						midClick: true,
-						removalDelay: 300,
-						mainClass: 'my-mfp-zoom-in'
-						});
-						});
-					</script>
-			</div>
-			<div class="clearfix"> </div>
-		</div>
-	 </div>
-</div>
-<!---->
-<div id="screenshots" class="screenshots">
-	 <div class="container">
-		 <div class="screen-text text-center">
-			 <h3>Resent Tours</h3>
-			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-		 </div>
-		 <!-- requried-jsfiles-for owl -->
-				<link href="css/owl.carousel.css" rel="stylesheet">
-							    <script src="js/owl.carousel.js"></script>
-							        <script>
-							    $(document).ready(function() {
-							      $("#owl-demo").owlCarousel({
-							        items : 1,
-							        lazyLoad : true,
-							        autoPlay : true,
-							        navigation : false,
-							        navigationText :  false,
-							        pagination : true,
-							      });
-							    });
-							    </script>
-			<!-- //requried-jsfiles-for owl -->
-		  <div id="owl-demo" class="owl-carousel">
-			  <div class="item text-center guide-sliders">
-				 <div class="col-md-4 image-grid">
-					 <img src="http://localhost/ukk_web/gudang/images/sc1.jpg">					 
-				 </div>
-				 <div class="col-md-4 image-grid">
-					 <img src="http://localhost/ukk_web/gudang/images/sc2.jpg">					 
-				 </div>
-				 <div class="col-md-4 image-grid">
-					 <img src="images/sc3.jpg">					 
-				 </div>				   
-			  </div>			  
-			  <div class="item text-center guide-sliders">
-				 <div class="col-md-4 image-grid">
-					 <img src="images/sc4.jpg">					 
-				 </div>
-				 <div class="col-md-4 image-grid">
-					 <img src="images/sc5.jpg">					 
-				 </div>
-				 <div class="col-md-4 image-grid">
-					 <img src="images/sc1.jpg">					 
-				 </div>						
-			  </div>
-			  <div class="item text-center guide-sliders">
-				 <div class="col-md-4 image-grid">
-					 <img src="images/sc5.jpg">					 
-				 </div>
-				 <div class="col-md-4 image-grid">
-					 <img src="images/sc4.jpg">					 
-				 </div>
-				 <div class="col-md-4 image-grid">
-					 <img src="images/sc2.jpg">					 
-				 </div>						
-			  </div>
-			  
-		  </div>
-	 </div>
-</div>
-<!---->
-<div id="testimonial" class="trusted">
-	 <div class="container">
-		 <div class="trusted-text text-center">
-			 <h3>Trusted by Thousands</h3>
-			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-		 </div>
-		  <div class="box-grids">
-				 <div class="col-md-4 client wow fadeInLeft" data-wow-delay="0.5s">
-					 <div class="box-grid">
-					 <span></span>
-					 <p>Lorem lean startup ipsum product market fit customer development acquihire technical cofounder. User engagement A/B testing shrink a market venture capital pitch deck. 
-					 Social bookmarking group buying crowded market pivot onboarding.</p>
-					 <label></label>
-					 </div>
-					 <h4><a href="#">Market Diaz</a></h4>
-					 <p class="ceo">Abz Network</p>
-				 </div>
-				 <div class="col-md-4 client wow fadeInUp" data-wow-delay="0.5s">
-					 <div class="box-grid">
-					 <span></span>
-					 <p>Lorem lean startup ipsum product market fit customer development acquihire technical cofounder. User engagement A/B testing shrink a market venture capital pitch deck. 
-					 Social bookmarking group buying crowded market pivot onboarding.</p>
-					 <label></label>
-					 </div>
-					 <h4><a href="#">Market Diaz</a></h4>
-					 <p class="ceo">Abz Network</p>
-				 </div>
-				 <div class="col-md-4 client wow fadeInRight" data-wow-delay="0.5s">
-					 <div class="box-grid">
-					 <span></span>
-					 <p>Lorem lean startup ipsum product market fit customer development acquihire technical cofounder. User engagement A/B testing shrink a market venture capital pitch deck. 
-					 Social bookmarking group buying crowded market pivot onboarding.</p>
-					 <label></label>
-					 </div>	
-						<h4><a href="#">Market Diaz</a></h4>
-					 <p class="ceo">Abz Network</p>
-				 </div>
-				 <div class="clearfix"></div>
-		  </div>
-	</div>
-</div>
-<!---->
-<div class="get-started">
-	 <div class="container">
-		 <h4 class="wow bounceInLeft" data-wow-delay="0.5s">We Ready  to Help You</h4>
-		 <h3 class="wow bounceInRight" data-wow-delay="0.5s">Get the Best Solution for Your Tour</h3>
-		 <a href="#">GET STARTED</a>
-	 </div>
-</div>
-<!---->
-<div id="contact" class="contact">
-	 <div class="container">
-		<div class="contact-text text-center">
-			 <h3>Contact</h3>
-			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-		</div>
-		<div class="contact-form">
-				<form>
-					<div class="col-md-6 text-box">
-						<form>
-							<input class="wow fadeInLeft" data-wow-delay="0.5s" type="text" placeholder="Name" required="required"/>
-							<input class="wow fadeInLeft" data-wow-delay="0.5s" type="text" placeholder="Email" required="required" pattern="([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?" />
-							<input class="wow fadeInLeft" data-wow-delay="0.5s" type="text" placeholder="Subject" required="required" />
-						</form>
-					</div>
-					 <div class="col-md-6 textarea">
-						<form>
-							<textarea class="wow fadeInRight" data-wow-delay="0.5s" required="required">Message</textarea>
-							<input class="wow fadeInRight" data-wow-delay="0.5s" type="submit" value="SUBMIT" />
-						</form>
-					  </div>
-					  <div class="clearfix"> </div>					  
-			  </form>
-		</div>
-		<div class="map">
-			<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d118560.66194971421!2d-48.15623890000003!3d-21.77946039999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1426765295728" frameborder="0" style="border:0"></iframe>
-		</div>
-	 </div>	  
-</div>
-<!---->
-<div class="footer">
-	 <div class="container">
-		 <div class="ftr-logo">
-			 <a class="wow bounceIn" data-wow-delay="0.5s" href="index.html"><img src="images/logo2.png" alt=""/></a>
-		 </div>
-		 <div class="copy-right wow bounceInUp" data-wow-delay="0.5s">
-			 <p>Copyright &#169; 2015 Travelo . All Rights Reserved.</p>
-			 <p>Design by <a href="http://w3layouts.com/"> W3layouts</a></p>
-		 </div>
+							<div class="to">
+								<h3>To</h3>
+								<input type="text" name="city" class="city2" placeholder="Type Destination City" required="">
+							</div>
+							<div class="clear"></div>
+							<div class="date">
+								<div class="depart">
+									<h3>Depart</h3>
+									<input  id="datepicker" name="Text" type="text" value="mm/dd/yyyy" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'mm/dd/yyyy';}" required="">
+									<span class="checkbox1">
+										<label class="checkbox"><input type="checkbox" name="" checked=""><i> </i>Flexible with date</label>
+									</span>
+								</div>
+								<div class="return">
+									<h3>Return</h3>
+									<input  id="datepicker1" name="Text" type="text" value="mm/dd/yyyy" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'mm/dd/yyyy';}" required="">
+									<span class="checkbox1">
+										<label class="checkbox"><input type="checkbox" name="" checked=""><i> </i>Flexible with date</label>
+									</span>
+								</div>
+								<div class="clear"></div>
+							</div>
+							<div class="class">
+								<h3>Class</h3>
+								<select id="w3_country1" onchange="change_country(this.value)" class="frm-field required">
+									<option value="null">Economy</option>  
+									<option value="null">Premium Economy</option>   
+									<option value="null">Business</option>   
+									<option value="null">First class</option>   						
+								</select>
 
-	 </div>
-</div>
-<!---->
-<script type="text/javascript">
-		$(document).ready(function() {
-				/*
-				var defaults = {
-				containerID: 'toTop', // fading element id
-				containerHoverID: 'toTopHover', // fading element hover id
-				scrollSpeed: 1200,
-				easingType: 'linear' 
-				};
-				*/
-		$().UItoTop({ easingType: 'easeOutQuart' });
-});
+							</div>
+							<div class="clear"></div>
+							<div class="numofppl">
+								<div class="adults">
+									<h3>Adult:(12+ yrs)</h3>
+									<div class="quantity"> 
+										<div class="quantity-select">                           
+											<div class="entry value-minus">&nbsp;</div>
+											<div class="entry value"><span>1</span></div>
+											<div class="entry value-plus active">&nbsp;</div>
+										</div>
+									</div>
+								</div>
+								<div class="child">
+									<h3>Child:(2-11 yrs)</h3>
+									<div class="quantity"> 
+										<div class="quantity-select">                           
+											<div class="entry value-minus">&nbsp;</div>
+											<div class="entry value"><span>1</span></div>
+											<div class="entry value-plus active">&nbsp;</div>
+										</div>
+									</div>
+								</div>
+								<div class="clear"></div>
+							</div>
+							<div class="clear"></div>
+							<input type="submit" value="Search Flights">
+						</form>						
+					</div>		
+					<div class="tab-1 resp-tab-content oneway">
+						<form action="#" method="post">
+							<div class="from">
+								<h3>From</h3>
+								<input type="text" name="city" class="city1" placeholder="Type Departure City" required="">
+							</div>
+							<div class="to">
+								<h3>To</h3>
+								<input type="text" name="city" class="city2" placeholder="Type Destination City" required="">
+							</div>
+							<div class="clear"></div>
+							<div class="date">
+								<div class="depart">
+									<h3>Depart</h3>
+									<input class="date" id="datepicker2" name="Text" type="text" value="mm/dd/yyyy" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'mm/dd/yyyy';}" required="">
+									<span class="checkbox1">
+										<label class="checkbox"><input type="checkbox" name="" checked=""><i> </i>Flexible with date</label>
+									</span>
+								</div>
+							</div>
+							<div class="class">
+								<h3>Class</h3>
+								<select id="w3_country1" onchange="change_country(this.value)" class="frm-field required">
+									<option value="null">Economy</option>  
+									<option value="null">Premium Economy</option>   
+									<option value="null">Business</option>   
+									<option value="null">First class</option>   						
+								</select>
+
+							</div>
+							<div class="clear"></div>
+							<div class="numofppl">
+								<div class="adults">
+									<h3>Adult:(12+ yrs)</h3>
+									<div class="quantity"> 
+										<div class="quantity-select">                           
+											<div class="entry value-minus">&nbsp;</div>
+											<div class="entry value"><span>1</span></div>
+											<div class="entry value-plus active">&nbsp;</div>
+										</div>
+									</div>
+								</div>
+								<div class="child">
+									<h3>Child:(2-11 yrs)</h3>
+									<div class="quantity"> 
+										<div class="quantity-select">                           
+											<div class="entry value-minus">&nbsp;</div>
+											<div class="entry value"><span>1</span></div>
+											<div class="entry value-plus active">&nbsp;</div>
+										</div>
+									</div>
+								</div>
+								<div class="clear"></div>
+							</div>
+							<div class="clear"></div>
+							<input type="submit" value="Search Flights">
+						</form>	
+								
+					</div>
+					<div class="tab-1 resp-tab-content multicity">
+						
+									<form action="#" method="post">
+										<div class="from">
+											<h3>From</h3>
+											<input type="text" name="city" class="city1" placeholder="Type Departure City" required="">
+										</div>
+										<div class="to">
+											<h3>To</h3>
+											<input type="text" name="city" class="city2" placeholder="Type Destination City" required="">
+										</div>
+										<div class="clear"></div>
+										<div class="date">
+											<div class="depart">
+												<h3>Depart</h3>
+												<input class="date" id="datepicker3" name="Text" type="text" value="mm/dd/yyyy" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'mm/dd/yyyy';}" required="">
+												<span class="checkbox1">
+													<label class="checkbox"><input type="checkbox" name="" checked=""><i> </i>Flexible with date</label>
+												</span>
+											</div>
+										</div>
+										<div class="class">
+											<h3>Class</h3>
+											<select id="w3_country1" onchange="change_country(this.value)" class="frm-field required">
+												<option value="null">Economy</option>  
+												<option value="null">Premium Economy</option>   
+												<option value="null">Business</option>   
+												<option value="null">First class</option>   						
+											</select>
+										</div>
+										<div class="clear"></div>
+										<div id="loadMore">Add City+</div>
+										<div id="showLess">Remove</div>
+									</form>
+				<div class="load_more">	
+						<ul id="myList">
+							<li>
+			
+								<div class="l_g spcl">
+									<form action="#" method="post" class="blackbg">
+										<div class="from">
+											<h3>From</h3>
+											<input type="text" name="city" class="city1" placeholder="Type Departure City" required="">
+										</div>
+										<div class="to">
+											<h3>To</h3>
+											<input type="text" name="city" class="city2" placeholder="Type Destination City" required="">
+										</div>
+										<div class="clear"></div>
+										<div class="date">
+											<div class="depart">
+												<h3>Depart</h3>
+												<input class="date" id="datepicker" name="Text" type="text" value="mm/dd/yyyy" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'mm/dd/yyyy';}" required="">
+												<span class="checkbox1">
+													<label class="checkbox"><input type="checkbox" name="" checked=""><i> </i>Flexible with date</label>
+												</span>
+											</div>
+										</div>
+										<div class="clear"></div>
+									</form>
+					
+								</div>
+								
+							</li>
+							<form action="#" method="post">
+							<div class="numofppl">
+								<div class="adults">
+									<h3>Adult:(12+ yrs)</h3>
+									<div class="quantity"> 
+										<div class="quantity-select">                           
+											<div class="entry value-minus">&nbsp;</div>
+											<div class="entry value"><span>1</span></div>
+											<div class="entry value-plus active">&nbsp;</div>
+										</div>
+									</div>
+								</div>
+								<div class="child">
+									<h3>Child:(2-11 yrs)</h3>
+									<div class="quantity"> 
+										<div class="quantity-select">                           
+											<div class="entry value-minus">&nbsp;</div>
+											<div class="entry value"><span>1</span></div>
+											<div class="entry value-plus active">&nbsp;</div>
+										</div>
+									</div>
+								</div>
+								<div class="clear"></div>
+							</div>
+							<div class="clear"></div>
+							<input type="submit" value="Search Flights">
+							</form>
+						</ul>
+					</div>
+					</div>
+		
+				</div>						
+			</div>
+		</div>
+	</div>
+	<div class="footer-w3l">
+		<p class="agileinfo"> &copy; 2016 Flight Ticket Booking . All Rights Reserved | Design by <a href="http://w3layouts.com">W3layouts</a></p>
+	</div>
+	<!--script for portfolio-->
+		<script src="<?php echo base_url();?>/web/js/jquery.min.js"> </script>
+		<script src="<?php echo base_url();?>/web/js/easyResponsiveTabs.js" type="text/javascript"></script>
+		<script type="text/javascript">
+			$(document).ready(function () {
+				$('#horizontalTab').easyResponsiveTabs({
+					type: 'default', //Types: default, vertical, accordion           
+					width: 'auto', //auto or any width like 600px
+					fit: true   // 100% fit in a container
+				});
+			});		
+		</script>
+		<!--//script for portfolio-->
+				<!-- Calendar -->
+				<link rel="stylesheet" href="css/jquery-ui.css" />
+				<script src="<?php echo base_url();?>/web/js/jquery-ui.js"></script>
+				  <script>
+						  $(function() {
+							$( "#datepicker,#datepicker1,#datepicker2,#datepicker3" ).datepicker();
+						  });
+				  </script>
+			<!-- //Calendar -->
+			<!--quantity-->
+									<script>
+									$('.value-plus').on('click', function(){
+										var divUpd = $(this).parent().find('.value'), newVal = parseInt(divUpd.text(), 10)+1;
+										divUpd.text(newVal);
+									});
+
+									$('.value-minus').on('click', function(){
+										var divUpd = $(this).parent().find('.value'), newVal = parseInt(divUpd.text(), 10)-1;
+										if(newVal>=1) divUpd.text(newVal);
+									});
+									</script>
+								<!--//quantity-->
+						<!--load more-->
+								<script>
+	$(document).ready(function () {
+		size_li = $("#myList li").size();
+		x=1;
+		$('#myList li:lt('+x+')').show();
+		$('#loadMore').click(function () {
+			x= (x+1 <= size_li) ? x+1 : size_li;
+			$('#myList li:lt('+x+')').show();
+		});
+		$('#showLess').click(function () {
+			x=(x-1<0) ? 1 : x-1;
+			$('#myList li').not(':lt('+x+')').hide();
+		});
+	});
 </script>
-<a href="#to-top" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
-<!----> 
- </body>
- </html>
+<!-- //load-more -->
+
+
+
+</body>
+</html>

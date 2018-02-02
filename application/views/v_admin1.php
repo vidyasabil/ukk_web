@@ -362,8 +362,8 @@
 
         </li>
         <li>
-        <a href="<?php echo base_url('admin/rute'); ?>">
-            <i class="fa fa-map"></i><span>Rutes</span>
+        <a href="<?php echo base_url('admin1/customer'); ?>">
+            <i class="fa fa-map"></i><span>customers</span>
             </a>
             </li>
         <li>

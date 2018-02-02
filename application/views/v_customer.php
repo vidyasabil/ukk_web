@@ -14,7 +14,7 @@
   <!-- Ionicons -->
   <link rel="stylesheet" href="<?php echo base_url('gudang/adminlte/bower_components/Ionicons/css/ionicons.min.css'); ?>">
   <!-- daterange picker -->
-  <link rel="stylesheet" href="<?php  base_url('gudang/adminlte/bower_components/bootstrap-daterangepicker/daterangepicker.css'); ?>">
+  <link rel="stylesheet" href="<?php echo base_url('gudang/adminlte/bower_components/bootstrap-daterangepicker/daterangepicker.css'); ?>">
   <!-- bootstrap datepicker -->
   <link rel="stylesheet" href="<?php echo base_url('gudang/adminlte/bower_components/bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css'); ?>">
   <link rel="stylesheet" href="<?php echo base_url('gudang/adminlte/bower_components/bootstrap-datepicker/dist/css/bootstrap-datepicker.css'); ?>">
@@ -348,8 +348,8 @@
           </a>
         </li>
         <li class="active">
-          <a href="<?php echo base_url('adminlte/rute'); ?>">
-            <i class="fa fa-map"></i> <span>Rutes</span>
+          <a href="<?php echo base_url('adminlte/customer'); ?>">
+            <i class="fa fa-map"></i> <span>customer</span>
           </a>
         </li>
         <li class="treeview">
@@ -521,7 +521,7 @@
               <h3 class="box-title">Input masks</h3>
             </div>
             <div class="box-body">
-              <form action="<?php echo base_url('admin/proses_tambah'); ?>" method="post">
+              <form action="<?php echo base_url('admin1/proses_tambah'); ?>" method="post">
 <!--                 <div class="form-group">
                 <label>Depart At :</label>
                 <div class="input-group date">
@@ -533,7 +533,7 @@
                 </div> -->
                 <div class="bootstrap-timepicker">
                 <div class="form-group">
-                  <label>Depart At:</label>
+                  <label>Name:</label>
 
                   <div class="input-group">
                     <input type="text" class="form-control timepicker" name="depart">
@@ -545,15 +545,15 @@
                 </div>
                 </div>
                 <div class="form-group">
-                  <label>Rute From :</label>
+                  <label>Address :</label>
                   <input type="text" class="form-control" name="rutefrom" required="true">
                 </div>
                 <div class="form-group">
-                  <label>Rute To :</label>
+                  <label>Phone :</label>
                   <input type="text" class="form-control" name="ruteto" required="true">
                 </div>  
                 <div class="form-group">
-                  <label>Price :</label>
+                  <label>Gender :</label>
                   <input type="text" class="form-control" name="price" required="true">
                 </div>
                 <div class="box-footer">
@@ -580,25 +580,25 @@
               <table class="table">
                 <tr>
                   <th style="width: 10px">#</th>
-                  <th>Depart At</th>
-                  <th>Rute From</th>
-                  <th>Rute To</th>
-                  <th>Price</th>
+                  <th>Name</th>
+                  <th>Address</th>
+                  <th>Phone</th>
+                  <th>Gender</th>
                   <th>Action</th>
             
                 </tr>
                   <?php 
                   $no = 1;
-                  foreach($rute as $s){ 
+                  foreach($customer as $s){ 
                   ?>
                 <tr>
                   <td><?php echo $no++ ?></td>
-                  <td><?php echo $s->depart_at ?></td>
-                  <td><?php echo $s->rute_from ?></td>
-                  <td><?php echo $s->rute_to ?></td>
-                  <td><?php echo $s->price ?></td>
-                  <td><a style="cursor: pointer;" title="" onclick="href='<?php echo base_url(('admin/hapus_rute/'.$s->id)); ?>'">Remove</a>  
-                    <a style="cursor: pointer;" title="" onclick="href='<?php echo base_url(('admin/edit_rute/'.$s->id)); ?>'">Edit</a>
+                  <td><?php echo $s->name ?></td>
+                  <td><?php echo $s->address ?></td>
+                  <td><?php echo $s->phone ?></td>
+                  <td><?php echo $s->gender ?></td>
+                  <td><a style="cursor: pointer;" title="" onclick="href='<?php echo base_url(('admin1/hapus_customer/'.$s->id)); ?>'">Remove</a>  
+                    <a style="cursor: pointer;" title="" onclick="href='<?php echo base_url(('admin1/edit_customer/'.$s->id)); ?>'">Edit</a>
                   </td>
                 </tr>
                 <?php } ?>

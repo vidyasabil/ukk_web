@@ -315,7 +315,7 @@ class CI_Loader {
 				require_once($app_path.$class.'.php');
 				if ( ! class_exists($class, FALSE))
 				{
-					throw new RuntimeException($app_path.$class.".php exists, but doesn't declare class ".$class);
+					throw new RuntimeException($mod_path."models/".$path.$model.".php exists, but doesn't declare class ".$model);
 				}
 			}
 		}
