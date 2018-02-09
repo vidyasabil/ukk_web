@@ -349,7 +349,7 @@
         </li>
         <li class="active">
           <a href="<?php echo base_url('adminlte/rute'); ?>">
-            <i class="fa fa-map"></i> <span>Rutes</span>
+            <i class="fa fa-map"></i> <span>Reservation</span>
           </a>
         </li>
        
@@ -422,10 +422,10 @@
                 </div> -->
                 <div class="bootstrap-timepicker">
                 <div class="form-group">
-                  <label>Depart At:</label>
+                  <label>Reservation code:</label>
 
                   <div class="input-group">
-                    <input type="text" class="form-control timepicker" name="depart">
+                    <input type="text" class="form-control timepicker" name="reservation">
 
                     <div class="input-group-addon">
                       <i class="fa fa-clock-o"></i>
@@ -434,19 +434,39 @@
                 </div>
                 </div>
                 <div class="form-group">
-                  <label>Rute From :</label>
-                  <input type="text" class="form-control" name="rutefrom" required="true">
+                  <label>Reservation at :</label>
+                  <input type="text" class="form-control" name="reservationat" required="true">
                 </div>
                 <div class="form-group">
-                  <label>Rute To :</label>
-                  <input type="text" class="form-control" name="ruteto" required="true">
+                  <label>Reservation date :</label>
+                  <input type="text" class="form-control" name="Reservationdate" required="true">
                 </div>  
                 <div class="form-group">
-                  <label>Price :</label>
-                  <input type="text" class="form-control" name="price" required="true">
+                  <label>Customer id :</label>
+                  <input type="text" class="form-control" name="customerid" required="true">
                 </div>
                 <div class="box-footer">
                   <button type="submit" class="btn btn-primary">Submit</button>
+                </div>
+                <div class="form-group">
+                  <label>Seat code :</label>
+                  <input type="text" class="form-control" name="seatcode" required="true">
+                </div>
+                <div class="form-group">
+                  <label>Rute id :</label>
+                  <input type="text" class="form-control" name="ruteid" required="true">
+                </div>
+                <div class="form-group">
+                  <label>Depart at :</label>
+                  <input type="text" class="form-control" name="departat" required="true">
+                </div>
+                <div class="form-group">
+                  <label>Priice:</label>
+                  <input type="text" class="form-control" name="price" required="true">
+                </div>
+                <div class="form-group">
+                  <label>User id:</label>
+                  <input type="text" class="form-control" name="userid  " required="true">
                 </div>
               </form>
             </div>
@@ -469,11 +489,15 @@
               <table class="table">
                 <tr>
                   <th style="width: 10px">#</th>
-                  <th>Depart At</th>
-                  <th>Rute From</th>
-                  <th>Rute To</th>
+                  <th>Reservation code</th>
+                  <th>Reservation at</th>
+                  <th>Reservation date</th>
+                  <th>Customer id</th>
+                  <th>Seat code</th>
+                  <th>Rute id</th>
+                  <th>Depart at</th>
                   <th>Price</th>
-                  <th>Action</th>
+                  <th>User id</th>
             
                 </tr>
                   <?php 
@@ -482,12 +506,17 @@
                   ?>
                 <tr>
                   <td><?php echo $no++ ?></td>
-                  <td><?php echo $s->depart_at ?></td>
-                  <td><?php echo $s->rute_from ?></td>
-                  <td><?php echo $s->rute_to ?></td>
-                  <td><?php echo $s->price ?></td>
-                  <td><a style="cursor: pointer;" title="" onclick="href='<?php echo base_url(('admin/hapus_rute/'.$s->id)); ?>'">Remove</a>  
-                    <a style="cursor: pointer;" title="" onclick="href='<?php echo base_url(('admin/edit_rute/'.$s->id)); ?>'">Edit</a>
+                  <td><?php echo $s->Reservation_code ?></td>
+                  <td><?php echo $s->Reservation_at ?></td>
+                  <td><?php echo $s->Reservation_date ?></td>
+                  <td><?php echo $s->Customer_id ?></td>
+                  <td><?php echo $s->Seat_code ?></td>
+                  <td><?php echo $s->Rute_id ?></td>
+                  <td><?php echo $s->Depart_at ?></td>
+                  <td><?php echo $s->Price ?></td>
+                  <td><?php echo $s->User_id ?></td>
+                  <td><a style="cursor: pointer;" title="" onclick="href='<?php echo base_url(('admin/hapus_reservation/'.$s->id)); ?>'">Remove</a>  
+                    <a style="cursor: pointer;" title="" onclick="href='<?php echo base_url(('admin/edit_reservation/'.$s->id)); ?>'">Edit</a>
                   </td>
                 </tr>
                 <?php } ?>
