@@ -369,12 +369,7 @@
        
       
      
-        <li><a href="https://adminltelte.io/docs"><i class="fa fa-book"></i> <span>Documentation</span></a></li>
-        <li class="header">LABELS</li>
-        <li><a href="#"><i class="fa fa-circle-o text-red"></i> <span>Important</span></a></li>
-        <li><a href="#"><i class="fa fa-circle-o text-yellow"></i> <span>Warning</span></a></li>
-        <li><a href="#"><i class="fa fa-circle-o text-aqua"></i> <span>Information</span></a></li>
-      </ul>
+        </ul>
     </section>
     <!-- /.sidebar -->
   </aside>
@@ -410,7 +405,7 @@
               <h3 class="box-title">Input masks</h3>
             </div>
             <div class="box-body">
-              <form action="<?php echo base_url('admin/proses_tambah'); ?>" method="post">
+              <form action="<?php echo base_url('admin/proses_tambah_reservation'); ?>" method="post">
 <!--                 <div class="form-group">
                 <label>Depart At :</label>
                 <div class="input-group date">
@@ -424,11 +419,11 @@
                 <div class="form-group">
                   <label>Reservation code:</label>
 
-                  <div class="input-group">
-                    <input type="text" class="form-control timepicker" name="reservation">
+                  <div class="form-group">
+                    <input type="text" class="form-control" name="reservation" required="true">
 
-                    <div class="input-group-addon">
-                      <i class="fa fa-clock-o"></i>
+                    <div>
+                    
                     </div>
                   </div>
                 </div>
@@ -445,9 +440,7 @@
                   <label>Customer id :</label>
                   <input type="text" class="form-control" name="customerid" required="true">
                 </div>
-                <div class="box-footer">
-                  <button type="submit" class="btn btn-primary">Submit</button>
-                </div>
+                
                 <div class="form-group">
                   <label>Seat code :</label>
                   <input type="text" class="form-control" name="seatcode" required="true">
@@ -467,6 +460,9 @@
                 <div class="form-group">
                   <label>User id:</label>
                   <input type="text" class="form-control" name="userid  " required="true">
+                </div>
+                <div class="box-footer">
+                  <button type="submit" class="btn btn-primary">Submit</button>
                 </div>
               </form>
             </div>
@@ -502,7 +498,7 @@
                 </tr>
                   <?php 
                   $no = 1;
-                  foreach($rute as $s){ 
+                  foreach($reservation as $s){ 
                   ?>
                 <tr>
                   <td><?php echo $no++ ?></td>
@@ -515,8 +511,8 @@
                   <td><?php echo $s->Depart_at ?></td>
                   <td><?php echo $s->Price ?></td>
                   <td><?php echo $s->User_id ?></td>
-                  <td><a style="cursor: pointer;" title="" onclick="href='<?php echo base_url(('admin/hapus_reservation/'.$s->id)); ?>'">Remove</a>  
-                    <a style="cursor: pointer;" title="" onclick="href='<?php echo base_url(('admin/edit_reservation/'.$s->id)); ?>'">Edit</a>
+                  <td><a style="cursor: pointer;" title="" onclick="href='<?php echo base_url(('admin/hapus_rute/'.$s->id)); ?>'"><button type="button" class="btn btn-danger glyphicon glyphicon-trash"></button></a>  
+                    <a style="cursor: pointer;" title="" onclick="href='<?php echo base_url(('admin/edit_rute/'.$s->id)); ?>'"><button type="button" class="btn btn-danger glyphicon glyphicon-edit"></button></a>
                   </td>
                 </tr>
                 <?php } ?>

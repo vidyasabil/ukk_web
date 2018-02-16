@@ -71,7 +71,7 @@
 							<div class="clear"></div>
 							<div class="numofppl">
 								<div class="adults">
-									<h3>Adult:(12+ yrs)</h3>
+									<h3>Adult:(12+ years)</h3>
 									<div class="quantity"> 
 										<div class="quantity-select">                           
 											<div class="entry value-minus">&nbsp;</div>
@@ -81,7 +81,7 @@
 									</div>
 								</div>
 								<div class="child">
-									<h3>Child:(2-11 yrs)</h3>
+									<h3>Child:(2-11 years)</h3>
 									<div class="quantity"> 
 										<div class="quantity-select">                           
 											<div class="entry value-minus">&nbsp;</div>
@@ -129,7 +129,7 @@
 							<div class="clear"></div>
 							<div class="numofppl">
 								<div class="adults">
-									<h3>Adult:(12+ yrs)</h3>
+									<h3>Adult:(12+ years)</h3>
 									<div class="quantity"> 
 										<div class="quantity-select">                           
 											<div class="entry value-minus">&nbsp;</div>
@@ -139,7 +139,7 @@
 									</div>
 								</div>
 								<div class="child">
-									<h3>Child:(2-11 yrs)</h3>
+									<h3>Child:(2-11 years)</h3>
 									<div class="quantity"> 
 										<div class="quantity-select">                           
 											<div class="entry value-minus">&nbsp;</div>
@@ -222,7 +222,7 @@
 							<form action="#" method="post">
 							<div class="numofppl">
 								<div class="adults">
-									<h3>Adult:(12+ yrs)</h3>
+									<h3>Adult:(12+ years)</h3>
 									<div class="quantity"> 
 										<div class="quantity-select">                           
 											<div class="entry value-minus">&nbsp;</div>
@@ -232,7 +232,7 @@
 									</div>
 								</div>
 								<div class="child">
-									<h3>Child:(2-11 yrs)</h3>
+									<h3>Child:(2-11 years)</h3>
 									<div class="quantity"> 
 										<div class="quantity-select">                           
 											<div class="entry value-minus">&nbsp;</div>

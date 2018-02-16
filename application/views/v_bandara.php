@@ -412,11 +412,11 @@
                   <input type="text" class="form-control" name="kode" required="true">
                 </div>
                 <div class="form-group">
-                  <label>Nama Bandara :</label>
+                  <label>Nama :</label>
                   <input type="text" class="form-control" name="nama" required="true">
                 </div> 
                 <div class="form-group">
-                  <label>Kota :</label>
+                  <label>City :</label>
                   <input type="text" class="form-control" name="kota" required="true">
                 </div>
                 <div class="box-footer">

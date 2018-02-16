@@ -55,9 +55,6 @@ class Data_crud extends CI_Model {
 				return $this->db->get('transportation');
 			}
 
-			function tampil_databandara(){
-				return $this->db->get('airport');
-			}
 
 			function tampil_maskapai($table,$where){
 				return $this->db->get_where($table, $where);
@@ -75,9 +72,6 @@ class Data_crud extends CI_Model {
 				$this->db->insert($table,$data);
 			}
 
-			function input_databandara($data,$table){
-				$this->db->insert($table,$data);
-			}
 
 			function hapus_datatransportation($where,$table){
 				$this->db->where($where);
@@ -92,9 +86,91 @@ class Data_crud extends CI_Model {
 				$this->db->where($where);
 				$this->db->update($table,$data);
 			}
-
+//maskapai//
 			function tampil_datamaskapai(){
 				return $this->db->get('tb_maskapai');
+
+			function input_datamaskapai($data,$table){
+			$this->db->insert($table,$data);
+			} 
+
+			function cek_login($table,$where){
+			return $this->db->get_where($table, $where);
+			}
+
+			function hapus_datamaskapai($where,$table){
+			$this->db->where($where);
+			$this->db->delete($table);
+			}
+
+			function edit_datamaskapai($where,$table){  
+			return $this->db->get_where($table,$where);
+			}
+
+			function update_datamaskapai($where,$data,$table){
+			$this->db->where($where);
+			$this->db->update($table,$data);
+//done//
+
+//customer//
+
+			function tampil_datacustomer(){
+			return $this->db->get('tb_customer');
+			}
+
+			function input_datacustomer($data,$table){
+			$this->db->insert($table,$data);
+			} 
+
+			function cek_login($table,$where){
+			return $this->db->get_where($table, $where);
+			}
+
+			function hapus_datacustomer($where,$table){
+			$this->db->where($where);
+			$this->db->delete($table);
+			}
+
+			function edit_datacustomer($where,$table){  
+			return $this->db->get_where($table,$where);
+			}
+
+			function update_datacustomer($where,$data,$table){
+			$this->db->where($where);
+			$this->db->update($table,$data);
+			}
+//done//
+//bandara//
+
+
+			function tampil_databandara(){
+			return $this->db->get('tb_rute');
+			}
+
+			function input_databandara($data,$table){
+			$this->db->insert($table,$data);
+			} 
+
+			function cek_login($table,$where){
+			return $this->db->get_where($table, $where);
+			}
+		
+			function hapus_databandara($where,$table){
+			$this->db->where($where);
+			$this->db->delete($table);
+			}
+
+			function edit_databandara($where,$table){  
+			return $this->db->get_where($table,$where);
+			}
+
+			function update_databandara($where,$data,$table){
+			$this->db->where($where);
+			$this->db->update($table,$data);
+			}
+//done/
+
+	}
 			}
 		}
 

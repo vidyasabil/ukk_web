@@ -155,17 +155,209 @@
         'id' => $id
     );
 
-    $this->data_crud->update_datarute($where,$data,'tb_reservation');
+    $this->data_crud->update_datareservation($where,$data,'tb_reservation');
     redirect('admin/reservation');
     
   }
 
 //done//
 
+//maskapai//
 
-  function maskapai(){
-    $data['maskapai'] = $this->data_crud->tampil_datamaskapai()->result();
+    function maskapai(){
+      $this->load->view('v_maskapai');
+    }
+
+  function maskapai_data(){
+    $data['maskapai'] = $this->data_crud->tampil_data_maskapai()->result();
     $this->load->view('v_maskapai',$data);
+
+     function hapus_maskapai($id){
+    $where = array('id' => $id);
+      $this->data_crud->hapus_data_maskapai($where,'tb_maskapai');
+      redirect('admin/maskapai');
+  }
+
+  function proses_tambah_maskapai(){
+      $id = $this->input->post('id');
+      $kode = $this->input->post('kode');
+      $nama = $this->input->post('nama');
+      $sitqty = $this->input->post('sitqty');
+ 
+
+      $data = array(
+      'id' => $id,
+      'kode' => $kode,
+      'nama' => $nama,
+      'sitqty' => $sitqty
+      );
+
+      $this->data_crud->input_data_maskapai($data,'tb_maskapai');
+      redirect('admin/maskapai');
+  }
+
+  function edit_maskapai($id){
+      $where = array('id' => $id);
+      $data['maskapai'] = $this->data_crud->edit_data_maskapai($where,'tb_maskapai')->result();
+      $this->load->view('v_maskapai_edit',$data);
+  }
+
+  function update_maskapai(){
+    $id = $this->input->post('id');
+    $kode = $this->input->post('kode');
+    $nama = $this->input->post('nama');
+    $sitqty = $this->input->post('sitqty');
+  
+    $data = array(
+        'id' => $id,
+        'kode' => $kode,
+        'nama' => $nama,
+        'sitqty' => $sitqty
+    );
+
+    $where = array(
+        'id' => $id
+    );
+
+    $this->data_crud->update_data_maskapai($where,$data,'tb_maskapai');
+    redirect('admin/maskapai');
+    
+//done//
+
+//customer//
+
+    function customer(){
+      $this->load->view('v_customer');
+    }
+
+    function customer(){
+    $data['customer'] = $this->data_crud->tampil_datacustomer()->result();
+    $this->load->view('v_customer',$data);
+
+  }
+
+
+  function hapus_customer($id){
+    $where = array('id' => $id);
+      $this->data_crud->hapus_datacustomer($where,'tb_customer');
+      redirect('admin/customer');
+  }
+
+  function proses_tambah_customer(){
+      $id = $this->input->post('id');
+      $name = $this->input->post('name');
+      $address = $this->input->post('address');
+      $phone = $this->input->post('phone');
+      $gender = $this->input->post('gender');
+ 
+
+      $data = array(
+      'name' => $name,
+      'address' => $address,
+      'phone' => $phone,
+      'gender' => $gender
+      );
+
+      $this->data_crud->input_datacustomer($data,'tb_customer');
+      redirect('admin/customer');
+  }
+
+  function edit_customer($id){
+      $where = array('id' => $id);
+      $data['customer'] = $this->data_crud->edit_datacustomer($where,'tb_customer')->result();
+      $this->load->view('v_customer_edit',$data);
+  }
+
+  function update_customer(){
+    $id = $this->input->post('id');
+    $name = $this->input->post('name');
+    $address = $this->input->post('address');
+    $phone = $this->input->post('phone');
+    $gender = $this->input->post('gender');  
+
+    $data = array(
+      'name' => $name,
+      'address' => $address,
+      'phone' => $phone,
+      'gender' => $gender
+    );
+
+    $where = array(
+        'id' => $id
+    );
+
+    $this->data_crud->update_datacustomer($where,$data,'tb_customer');
+    redirect('admin/customer');
+    
+  }
+
+//done//
+
+//bandara//
+
+  function bandara(){
+    $data['bandara'] = $this->data_crud->tampil_databandara()->result();
+    $this->load->view('v_bandara',$data);
+
+  }
+
+
+  function hapus_bandara($id){
+    $where = array('id' => $id);
+      $this->data_crud->hapus_databandara($where,'tb_rute');
+      redirect('admin/bandara');
+  }
+
+  function proses_tambahbandara(){
+      $kode = $this->input->post('kode');
+      $nama = $this->input->post('nama');
+      $city = $this->input->post('city');
+ 
+
+      $data = array(
+      'kode' => $kode,
+      'nama' => $nama,
+      'city' => $city
+      );
+
+      $this->data_crud->input_databandara($data,'tb_bandara');
+      redirect('admin/bandara');
+  }
+
+  function edit_bandara($id){
+      $where = array('id' => $id);
+      $data['bandara'] = $this->data_crud->edit_databandara($where,'tb_bandara')->result();
+      $this->load->view('v_bandara_edit',$data);
+  }
+
+  function update_bandara(){
+    $id = $this->input->post('id');
+    $kode = $this->input->post('kode');
+    $nama = $this->input->post('nama');
+    $city = $this->input->post('city');
+   
+
+    $data = array(
+      'kode' => $kode,
+      'nama' => $nama,
+      'city' => $city
+    );
+
+    $where = array(
+        'id' => $id
+    );
+
+    $this->data_crud->update_databandara($where,$data,'tb_bandara');
+    redirect('admin/bandara');
+    
+  }
+
+  //done//
+  
+  }
+
 }
+
  }
+
   ?>

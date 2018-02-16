@@ -419,7 +419,7 @@
                   <input type="text" class="form-control" name="deskripsi" required="true">
                 </div>  
                 <div class="form-group">
-                  <label>Jumlah Kursi :</label>
+                  <label>Sit Quantity :</label>
                   <input type="text" class="form-control" name="seat_qty" required="true">
                 </div>
                 <div class="box-footer">

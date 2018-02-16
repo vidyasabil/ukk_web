@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="<?php echo base_url('gudang/adminlte/bower_components/bootstrap/dist/css/bootstrap.min.css'); ?>">
   <link rel="stylesheet" href="<?php echo base_url('gudang/adminlte/bower_components/bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.min.css'); ?>">
   <!-- Font Awesome -->
-  <link rel="stylesheet" href="<?php echo base_url('gudang/adminlte/bower_components/font-awesome/css/font-awesome.min.css'); ?>">
+  <link rel="stylesheet" href="<?php echo base_url('gudang/amdinlte/bower_components/font-awesome/css/font-awesome.min.css'); ?>">
   <!-- Ionicons -->
   <link rel="stylesheet" href="<?php echo base_url('gudang/adminlte/bower_components/Ionicons/css/ionicons.min.css'); ?>">
   <!-- daterange picker -->
@@ -343,43 +343,21 @@
       <ul class="sidebar-menu" data-widget="tree">
         <li class="header">MAIN NAVIGATION</li>
         <li>
-          <a href="<?php echo base_url('adminlte'); ?>">
+          <a href="<?php echo base_url('admin'); ?>">
             <i class="fa fa-dashboard"></i> <span>Dashboard</span>
           </a>
         </li>
         <li class="active">
-          <a href="<?php echo base_url('adminlte/rute'); ?>">
+          <a href="<?php echo base_url('admin/rute'); ?>">
             <i class="fa fa-map"></i> <span>Rutes</span>
           </a>
         </li>
        
-        <li class="treeview">
-          <a href="#">
-            <i class="fa fa-edit"></i> <span>Forms</span>
-            <span class="pull-right-container">
-              <i class="fa fa-angle-left pull-right"></i>
-            </span>
-          </a>
-          <ul class="treeview-menu">
-            <li><a href="general.html"><i class="fa fa-circle-o"></i> General Elements</a></li>
-            <li class="active"><a href="advanced.html"><i class="fa fa-circle-o"></i> Advanced Elements</a></li>
-            <li><a href="editors.html"><i class="fa fa-circle-o"></i> Editors</a></li>
-          </ul>
-        </li>
-       
-      
-     
-        <li><a href="https://adminltelte.io/docs"><i class="fa fa-book"></i> <span>Documentation</span></a></li>
-        <li class="header">LABELS</li>
-        <li><a href="#"><i class="fa fa-circle-o text-red"></i> <span>Important</span></a></li>
-        <li><a href="#"><i class="fa fa-circle-o text-yellow"></i> <span>Warning</span></a></li>
-        <li><a href="#"><i class="fa fa-circle-o text-aqua"></i> <span>Information</span></a></li>
-      </ul>
-    </section>
+        
     <!-- /.sidebar -->
   </aside>
 
-  <!-- Content Wrapper. Contains page content -->
+  <!-- Content Wrappehar. Contains page content -->
   <div class="content-wrapper">
     <!-- Content Header (Page header) -->
     <section class="content-header">
@@ -457,47 +435,7 @@
 
 
         </div>
-        <!-- /.col (left) -->
-        <div class="col-md-8">
-          <div class="box box-primary">
        
-            <div class="box-header">
-              <h3 class="box-title">Simple Full Width Table</h3>s
-            </div>
-            <!-- /.box-header -->
-            <div class="box-body no-padding">
-              <table class="table">
-                <tr>
-                  <th style="width: 10px">#</th>
-                  <th>Depart At</th>
-                  <th>Rute From</th>
-                  <th>Rute To</th>
-                  <th>Price</th>
-                  <th>Action</th>
-            
-                </tr>
-                  <?php 
-                  $no = 1;
-                  foreach($rute as $s){ 
-                  ?>
-                <tr>
-                  <td><?php echo $no++ ?></td>
-                  <td><?php echo $s->depart_at ?></td>
-                  <td><?php echo $s->rute_from ?></td>
-                  <td><?php echo $s->rute_to ?></td>
-                  <td><?php echo $s->price ?></td>
-                  <td><a style="cursor: pointer;" title="" onclick="href='<?php echo base_url(('admin/hapus_rute/'.$s->id)); ?>'">Remove</a>  
-                    <a style="cursor: pointer;" title="" onclick="href='<?php echo base_url(('admin/edit_rute/'.$s->id)); ?>'">Edit</a>
-                  </td>
-                </tr>
-                <?php } ?>
-              </table>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- /.row -->
-
     </section>
     <!-- /.content -->
   </div>
