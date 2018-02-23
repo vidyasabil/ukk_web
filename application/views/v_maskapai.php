@@ -361,7 +361,7 @@
         <li class="treeview active">
           <a href="">
             <i class="fa fa-plane"></i>
-            <span>Maskapai</span>
+            <span>Plane</span>
             <span class="pull-right-container">
               <i class="fa fa-angle-left pull-right"></i>
             </span>
@@ -377,7 +377,7 @@
         <li class="treeview">
           <a href="">
             <i class="glyphicon glyphicon-map-marker"></i>
-            <span>Bandara</span>
+            <span>Airport</span>
             <span class="pull-right-container">
               <i class="fa fa-angle-left pull-right"></i>
             </span>
@@ -385,6 +385,19 @@
           <ul class="treeview-menu">
             <li><a href="<?php echo base_url('admin/bandara'); ?>"><i class="fa fa-plus"></i>Tambah</a></li>
             <li><a href="<?php echo base_url('admin/databandara'); ?>"><i class="fa fa-database"></i> Data</a></li>
+          </ul>
+        </li>
+         <li class="treeview">
+          <a href="">
+            <i class="fa fa-user"></i>
+            <span>Cutomer</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li><a href="<?php echo base_url('admin/customer'); ?>"><i class="fa fa-plus"></i>Tambah</a></li>
+            <li><a href="<?php echo base_url('admin/datacustomer'); ?>"><i class="fa fa-database"></i> Data</a></li>
           </ul>
         </li>
       </ul>
@@ -409,7 +422,7 @@
               <h3 class="box-title">Input masks</h3>
             </div>
             <div class="box-body">
-              <form action="<?php echo base_url('admin/proses_tambahtransport'); ?>" method="post">
+              <form action="<?php echo base_url('admin/proses_tambahmaskapai'); ?>" method="post">
                 <div class="form-group">
                   <label>Kode :</label>
                   <input type="text" class="form-control" name="kode" required="true">
@@ -420,7 +433,7 @@
                 </div>  
                 <div class="form-group">
                   <label>Sit Quantity :</label>
-                  <input type="text" class="form-control" name="seat_qty" required="true">
+                  <input type="text" class="form-control" name="sitqty" required="true">
                 </div>
                 <div class="box-footer">
                   <button type="submit" class="btn btn-primary">Submit</button>

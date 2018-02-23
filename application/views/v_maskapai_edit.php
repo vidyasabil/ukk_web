@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+  <!DOCTYPE html>
 <html>
 <head>
   <meta charset="utf-8">
@@ -353,7 +353,7 @@
         <li class="treeview">
           <a href="">
             <i class="fa fa-plane"></i>
-            <span>Maskapai</span>
+            <span>Plane</span>
             <span class="pull-right-container">
               <i class="fa fa-angle-left pull-right"></i>
             </span>
@@ -361,6 +361,32 @@
           <ul class="treeview-menu">
             <li><a href="<?php echo base_url('admin/maskapai'); ?>"><i class="fa fa-plus"></i>Tambah</a></li>
             <li><a href="<?php echo base_url('admin/datamaskapai'); ?>"><i class="fa fa-database"></i> Data</a></li>
+          </ul>
+        </li>
+         <li class="treeview">
+          <a href="">
+            <i class="glyphicon glyphicon-map-marker"></i>
+            <span>Airport</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li><a href="<?php echo base_url('admin/bandara'); ?>"><i class="fa fa-plus"></i>Tambah</a></li>
+            <li><a href="<?php echo base_url('admin/databandara'); ?>"><i class="fa fa-database"></i> Data</a></li>
+          </ul>
+        </li>
+         <li class="treeview">
+          <a href="">
+            <i class="fa fa-user"></i>
+            <span>Cutomer</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li><a href="<?php echo base_url('admin/customer'); ?>"><i class="fa fa-plus"></i>Tambah</a></li>
+            <li><a href="<?php echo base_url('admin/datacustomer'); ?>"><i class="fa fa-database"></i> Data</a></li>
           </ul>
         </li>
       </ul>
@@ -385,22 +411,22 @@
               <h3 class="box-title">Input masks</h3>
             </div>
             <div class="box-body">
-              <form action="<?php echo base_url('admin/update_transportation'); ?>" method="post">
+              <form action="<?php echo base_url('admin/update_datamaskapai'); ?>" method="post">
                 <?php 
-                  foreach($transport as $t){ 
+                  foreach($maskapai as $t){ 
                   ?>
                 <div class="form-group">
                   <label>Kode :</label>
                   <input type="hidden" class="form-control" name="id" required="true" value="<?php echo $t->id ?>">
-                  <input type="text" class="form-control" name="kode" required="true" value="<?php echo $t->code ?>">
+                  <input type="text" class="form-control" name="kode" required="true" value="<?php echo $t->kode ?>">
                 </div>
                 <div class="form-group">
-                  <label>Deskripsi :</label>
-                  <input type="text" class="form-control" name="deskripsi" required="true" value="<?php echo $t->description ?>">
+                  <label>Nama :</label>
+                  <input type="text" class="form-control" name="nama" required="true" value="<?php echo $t->nama ?>">
                 </div>  
                 <div class="form-group">
-                  <label>Jumlah Kursi :</label>
-                  <input type="text" class="form-control" name="seat_qty" required="true" value="<?php echo $t->seat_qty ?>">
+                  <label>Sit Quantity :</label>
+                  <input type="text" class="form-control" name="sitqty" required="true" value="<?php echo $t->sitqty ?>">
                 </div>
                 <div class="box-footer">
                   <button type="submit" class="btn btn-primary">Submit</button>
@@ -417,41 +443,7 @@
         </div>
         <!-- /.col (left) -->
         <div class="col-md-8">
-          <div class="box box-primary">
-       
-            <div class="box-header">
-              <h3 class="box-title">Simple Full Width Table</h3>s
-            </div>
-            <!-- /.box-header -->
-            <div class="box-body no-padding">
-              <table class="table">
-                <tr>
-                  <th style="width: 10px">#</th>
-                  <th>Kode</th>
-                  <th>Deskripsi</th>
-                  <th>Jumlah Kursi</th>
-                  <th>Action</th>
-            
-                </tr>
-                  <?php 
-                  $no = 1;
-                  foreach($transport as $t){ 
-                  ?>
-                <tr>
-                  <td><?php echo $no++ ?></td>
-                  <td><?php echo $t->code ?></td>
-                  <td><?php echo $t->description ?></td>
-                  <td><?php echo $t->seat_qty ?></td>
-                  <td>
-                    <div class="btn btn-danger" style="height: 26px; padding: 2px; padding-left: 10px; padding-right: 10px;"><a style="cursor: pointer; color:white ;" title="" onclick="href='<?php echo base_url(('admin/hapus_transport/'.$t->id)); ?>'">Remove</a></div>
-                  </td>
-                </tr>
-                <?php } ?>
-              </table>
-            </div>
-          </div>
-        </div>
-      </div>
+        
       <!-- /.row -->
 
     </section>

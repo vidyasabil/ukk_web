@@ -34,15 +34,21 @@
 				<div class="leftresv">
 				<div class="form-group">
 					<label for="firstname" class="control-label">From :</label>
-					<input type="text" class="form-control" id="firstname" placeholder="First Name" required>
-					
+					<select class="form-control" id="firstname" placeholder="First Name" required>
+					<?php foreach ($from as $r) { ?>
+						<option><?php echo $r->rute_from ?></option>
+					<?php } ?>
+					</select>
 				</div>
 				</div>
 				<div class="leftresv">
 				<div class="form-group">
-					<label for="firstname" class="control-label">To:</label>
-					<input type="text" class="form-control" id="firstname" placeholder="First Name" required>
-			
+					<label for="firstname" class="control-label">To :</label>
+					<select class="form-control" id="firstname" placeholder="First Name" required>
+					<?php foreach ($to as $r) { ?>
+						<option><?php echo $r->rute_to ?></option>
+					<?php } ?>
+					</select>
 				</div>
 				</div>
 				<div class="leftresv">

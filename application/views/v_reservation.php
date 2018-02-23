@@ -347,26 +347,66 @@
             <i class="fa fa-dashboard"></i> <span>Dashboard</span>
           </a>
         </li>
-        <li class="active">
-          <a href="<?php echo base_url('adminlte/rute'); ?>">
-            <i class="fa fa-map"></i> <span>Reservation</span>
-          </a>
-        </li>
-       
-        <li class="treeview">
-          <a href="#">
-            <i class="fa fa-edit"></i> <span>Forms</span>
+         <li class="treeview">
+          <a href="">
+            <i class="fa fa-map"></i>
+            <span>Rutes</span>
             <span class="pull-right-container">
               <i class="fa fa-angle-left pull-right"></i>
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="general.html"><i class="fa fa-circle-o"></i> General Elements</a></li>
-            <li class="active"><a href="advanced.html"><i class="fa fa-circle-o"></i> Advanced Elements</a></li>
-            <li><a href="editors.html"><i class="fa fa-circle-o"></i> Editors</a></li>
+            <li><a href="<?php echo base_url('admin/rute'); ?>"><i class="fa fa-plus"></i>Tambah</a></li>
+            <li><a href="<?php echo base_url('admin/datarute'); ?>"><i class="fa fa-database"></i> Data</a></li>
           </ul>
         </li>
-       
+
+            <li>
+        <a href="<?php echo base_url('admin/Reservation'); ?>">
+            <i class="fa fa-map"></i><span>Reservation</span>
+            </a>
+            </li>
+
+           <li class="treeview active">
+          <a href="">
+            <i class="fa fa-plane"></i>
+            <span>Plane</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li><a href="<?php echo base_url('admin/maskapai'); ?>"><i class="fa fa-plus"></i>Tambah</a></li>
+            <li  class="active"><a href="<?php echo base_url('admin/datamaskapai'); ?>"><i class="fa fa-database"></i> Data</a></li></ul>
+
+             <li class="treeview">
+          <a href="">
+            <i class="glyphicon glyphicon-map-marker"></i>
+            <span>Airport</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li><a href="<?php echo base_url('admin/Bandara'); ?>"><i class="fa fa-plus"></i>Tambah</a></li>
+            <li><a href="<?php echo base_url('admin/databandara'); ?>"><i class="fa fa-database"></i> Data</a></li>
+          </ul>
+        </li>
+         <li class="treeview">
+          <a href="">
+            <i class="fa fa-map"></i>
+            <span>Cutomer</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li><a href="<?php echo base_url('admin/customer'); ?>"><i class="fa fa-plus"></i>Tambah</a></li>
+            <li><a href="<?php echo base_url('admin/datacustomer'); ?>"><i class="fa fa-database"></i> Data</a></li>
+          </ul>
+        </li>
+
+               
       
      
         </ul>

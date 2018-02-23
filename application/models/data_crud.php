@@ -26,151 +26,166 @@ class Data_crud extends CI_Model {
 		$this->db->where($where);
 		$this->db->update($table,$data);
 	}
-  			//reservation//
 
-		function tampil_datareservation(){
-			return $this->db->get('tb_reservation');
-		}
+  //reservation//
 
-		function input_datareservation($data,$table){
-			$this->db->insert($table,$data);
-		} 
-		function hapus_datareservation($where,$table){
-			$this->db->where($where);
-			$this->db->delete($table);
-		}
+	function tampil_datareservation(){
+		return $this->db->get('tb_reservation');
+	}
 
-		function edit_datareservation($where,$table){  
-			return $this->db->get_where($table,$where);
-		}
+	function input_datareservation($data,$table){
+		$this->db->insert($table,$data);
+	} 
+	function hapus_datareservation($where,$table){
+		$this->db->where($where);
+		$this->db->delete($table);
+	}
 
-		function update_datareservation($where,$data,$table){
-			$this->db->where($where);
-			$this->db->update($table,$data);
-		}
+	function edit_datareservation($where,$table){  
+		return $this->db->get_where($table,$where);
+	}
 
- 		//done//
+	function update_datareservation($where,$data,$table){
+		$this->db->where($where);
+		$this->db->update($table,$data);
+	}
 
-			function tampil_datatransportation(){
-				return $this->db->get('transportation');
-			}
+ 	//done//
 
-
-			function tampil_maskapai($table,$where){
-				return $this->db->get_where($table, $where);
-			}
-
-			function join_rutemaskapai(){
-				$this->db->select("rute.id,rute.depart_at,rute.rute_from,rute.rute_to,rute.price,transportation.description");
-				$this->db->from('rute');
-				$this->db->join('transportation', 'transportation.id = rute.transportationid');
-				$query = $this->db->get();
-				return $query->result();
-			}
-
-			function input_datatransport($data,$table){
-				$this->db->insert($table,$data);
-			}
+	function tampil_datatransportation(){
+		return $this->db->get('transportation');
+	}
 
 
-			function hapus_datatransportation($where,$table){
-				$this->db->where($where);
-				$this->db->delete($table);
-			}
+	function tampil_maskapai($table,$where){
+		return $this->db->get_where($table, $where);
+	}
 
-			function edit_datatransportation($where,$table){  
-				return $this->db->get_where($table,$where);
-			}
+	function join_rutemaskapai(){
+		$this->db->select("rute.id,rute.depart_at,rute.rute_from,rute.rute_to,rute.price,transportation.description");
+		$this->db->from('rute');
+		$this->db->join('transportation', 'transportation.id = rute.transportationid');
+		$query = $this->db->get();
+		return $query->result();
+	}
 
-			function update_datatransportation($where,$data,$table){
-				$this->db->where($where);
-				$this->db->update($table,$data);
-			}
+	function input_datatransport($data,$table){
+		$this->db->insert($table,$data);
+	}
+
+
+	function hapus_datatransportation($where,$table){
+		$this->db->where($where);
+		$this->db->delete($table);
+	}
+
+	function edit_datatransportation($where,$table){  
+		return $this->db->get_where($table,$where);
+	}
+
+	function update_datatransportation($where,$data,$table){
+		$this->db->where($where);
+		$this->db->update($table,$data);
+	}
+
 //maskapai//
-			function tampil_datamaskapai(){
-				return $this->db->get('tb_maskapai');
+	
+	function tampil_datamaskapai(){
+		return $this->db->get('tb_maskapai');
+	}
+	function input_datamaskapai($data,$table){
+		$this->db->insert($table,$data);
+	} 
 
-			function input_datamaskapai($data,$table){
-			$this->db->insert($table,$data);
-			} 
+	function hapus_datamaskapai($where,$table){
+		$this->db->where($where);
+		$this->db->delete($table);
+	}
 
-			function cek_login($table,$where){
-			return $this->db->get_where($table, $where);
-			}
+	function edit_datamaskapai($where,$table){  
+		return $this->db->get_where($table,$where);
+	}
 
-			function hapus_datamaskapai($where,$table){
-			$this->db->where($where);
-			$this->db->delete($table);
-			}
-
-			function edit_datamaskapai($where,$table){  
-			return $this->db->get_where($table,$where);
-			}
-
-			function update_datamaskapai($where,$data,$table){
-			$this->db->where($where);
-			$this->db->update($table,$data);
+	function update_datamaskapai($where,$data,$table){
+		$this->db->where($where);
+		$this->db->update($table,$data);
 //done//
-
+	}
 //customer//
 
-			function tampil_datacustomer(){
-			return $this->db->get('tb_customer');
-			}
+	function tampil_datacustomer(){
+		return $this->db->get('tb_customer');
+	}
 
-			function input_datacustomer($data,$table){
-			$this->db->insert($table,$data);
-			} 
+	function input_datacustomer($data,$table){
+		$this->db->insert($table,$data);
+	} 
 
-			function cek_login($table,$where){
-			return $this->db->get_where($table, $where);
-			}
 
-			function hapus_datacustomer($where,$table){
-			$this->db->where($where);
-			$this->db->delete($table);
-			}
+	function hapus_datacustomer($where,$table){
+		$this->db->where($where);
+		$this->db->delete($table);
+	}
 
-			function edit_datacustomer($where,$table){  
-			return $this->db->get_where($table,$where);
-			}
+	function edit_datacustomer($where,$table){  
+		return $this->db->get_where($table,$where);
+	}
 
-			function update_datacustomer($where,$data,$table){
-			$this->db->where($where);
-			$this->db->update($table,$data);
-			}
+	function update_datacustomer($where,$data,$table){
+		$this->db->where($where);
+		$this->db->update($table,$data);
+	}
+
 //done//
 //bandara//
 
 
-			function tampil_databandara(){
-			return $this->db->get('tb_rute');
-			}
+	function tampil_databandara(){
+		return $this->db->get('tb_bandara');
+	}
 
-			function input_databandara($data,$table){
-			$this->db->insert($table,$data);
-			} 
+	function input_databandara($data,$table){
+		$this->db->insert($table,$data);
+	} 
 
-			function cek_login($table,$where){
-			return $this->db->get_where($table, $where);
-			}
-		
-			function hapus_databandara($where,$table){
-			$this->db->where($where);
-			$this->db->delete($table);
-			}
 
-			function edit_databandara($where,$table){  
-			return $this->db->get_where($table,$where);
-			}
+	function hapus_databandara($where,$table){
+		$this->db->where($where);
+		$this->db->delete($table);
+	}
 
-			function update_databandara($where,$data,$table){
-			$this->db->where($where);
-			$this->db->update($table,$data);
-			}
-//done/
+	function edit_databandara($where,$table){  
+		return $this->db->get_where($table,$where);
+	}
+
+	function update_databandara($where,$data,$table){
+		$this->db->where($where);
+		$this->db->update($table,$data);
+	}
+
+	function rutefrom(){
+		$this->db->select('DISTINCT(rute_from)');
+		return $this->db->get('tb_rute');
+	}
+
+	function ruteto(){
+		$this->db->select('DISTINCT(rute_to)');
+		return $this->db->get('tb_rute');
 
 	}
-			}
-		}
+	function kelas(){
+		$this->db->select('DISTINCT(class)');
+		return $this->db->get('tb_rute');
+		
+	}
+	
+//done/
+
+// Fitur search
+	function search($cari){
+		$this->db->like($cari);
+		return $this->db->get('tb_rute');
+	}
+	
+}
 

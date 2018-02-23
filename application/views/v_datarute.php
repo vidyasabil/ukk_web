@@ -347,11 +347,74 @@
             <i class="fa fa-dashboard"></i> <span>Dashboard</span>
           </a>
         </li>
-        <li class="active">
-          <a href="<?php echo base_url('admin/rute'); ?>">
-            <i class="fa fa-map"></i> <span>Rutes</span>
-          </a>
         </li>
+       <li class="treeview active">
+          <a href="">
+            <i class="fa fa-map"></i>
+            <span>Rutes</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li><a href="<?php echo base_url('admin/rute'); ?>"><i class="fa fa-plus"></i>Tambah</a></li>
+            <li><a href="<?php echo base_url('admin/datarute'); ?>"><i class="fa fa-database"></i> Data</a></li>
+          </ul>
+        </li>
+
+           <li class="treeview">
+          <a href="">
+            <i class="fa fa-ticket"></i>
+            <span>Reservation</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li><a href="<?php echo base_url('admin/Reservation'); ?>"><i class="fa fa-plus"></i>Tambah</a></li>
+            <li><a href="<?php echo base_url('admin/datareservation'); ?>"><i class="fa fa-database"></i> Data</a></li>
+          </ul>
+        </li>
+
+           <li class="treeview">
+          <a href="">
+            <i class="fa fa-plane"></i>
+            <span>Plane</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li><a href="<?php echo base_url('admin/maskapai'); ?>"><i class="fa fa-plus"></i>Tambah</a></li>
+            <li  class="active"><a href="<?php echo base_url('admin/datamaskapai'); ?>"><i class="fa fa-database"></i> Data</a></li></ul>
+
+             <li class="treeview">
+          <a href="">
+            <i class="glyphicon glyphicon-map-marker"></i>
+            <span>Airport</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li><a href="<?php echo base_url('admin/Bandara'); ?>"><i class="fa fa-plus"></i>Tambah</a></li>
+            <li><a href="<?php echo base_url('admin/databandara'); ?>"><i class="fa fa-database"></i> Data</a></li>
+          </ul>
+        </li>
+         <li class="treeview">
+          <a href="">
+            <i class="fa fa-map"></i>
+            <span>Cutomer</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li><a href="<?php echo base_url('admin/customer'); ?>"><i class="fa fa-plus"></i>Tambah</a></li>
+            <li><a href="<?php echo base_url('admin/datacustomer'); ?>"><i class="fa fa-database"></i> Data</a></li>
+          </ul>
+        </li>
+
        
         
     <!-- /.sidebar -->
@@ -373,42 +436,16 @@
     </section>
 
     <!-- Main content -->
-    <section class="content">
-
-      <!-- SELECT2 EXAMPLE -->
-      <div class="box box-default">
-      </div>
-      <!-- /.box -->
-
+     <section class="content">
       <div class="row">
-        <div class="col-md-4">
-
-          <div class="box box-primary">
+        <div class="col-xs-12">
+          <div class="box">
             <div class="box-header">
-              <h3 class="box-title">Input masks</h3>
+              <h3 class="box-title"><a href="<?php echo base_url("admin/rute"); ?>"><button class="btn btn-primary">Tambah</button></a></h3>
             </div>
             <div class="box-body">
-              <form action="<?php echo base_url('admin/proses_tambah'); ?>" method="post">
-<!--                 <div class="form-group">
-                <label>Depart At :</label>
-                <div class="input-group date">
-                  <div class="input-group-addon">
-                    <i class="fa fa-calendar"></i>
-                  </div>
-                  <input type="text" class="form-control pull-right" id="datepicker" name="depart" required="true" readonly="true">
-                  </div>
-                </div> -->
-              
-                <!-- /.col (left) -->
-        <div class="col-md-8">
-          <div class="box box-primary">
-       
-            <div class="box-header">
-              <h3 class="box-title">Simple Full Width Table</h3>s
-            </div>
-            <!-- /.box-header -->
-            <div class="box-body no-padding">
-              <table class="table">
+              <table id="example1" class="table table-bordered table-striped">
+                <thead>
                 <tr>
                   <th style="width: 10px">#</th>
                   <th>Depart At</th>
@@ -435,8 +472,6 @@
                 <?php } ?>
               </table>
             </div>
-          </div>
-        </div>
       </div>
       <!-- /.row -->
 
